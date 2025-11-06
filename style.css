@@ -1,0 +1,280 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #0a3d62;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  align-items: center;
+     margin: 0;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #f6b93b;
+}
+
+/* Responsive Navigation */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #0a3d62;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    text-align: right;
+    padding: 10px 20px;
+  }
+  nav ul.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/mkkk.jpg') center/cover no-repeat;
+  color: #79fbff;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #f6b93b;
+  color: #0a3d62;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #0a3d62;
+}
+
+/* Content Section */
+.content {
+  display: flex;
+  gap: 30px;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.content div {
+  flex: 1;
+  min-width: 280px;
+}
+
+.content h2 {
+  color: #0a3d62;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background: #0a3d62;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #f6b93b;
+  text-decoration: none;
+}
+ 
+ /* Services Section */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.service-card {
+  background: rgba(255, 255, 255, 0.9);
+  color: #0a3d62;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 320px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.service-card h2 {
+  color: #0a3d62;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #333;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+/* Contact Section */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(10, 61, 98, 0.9);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.contact-form, .company-info {
+  flex: 0;
+  min-width: 280px;
+}
+
+.contact-form h2, .company-info h2 {
+  color: #f6b93b;
+  margin-bottom: 15px;
+}
+
+/* Form Styling */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #f6b93b;
+}
+
+.contact-form button.btn {
+  align-self: flex-start;
+  background: #f6b93b;
+  color: #0a3d62;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button.btn:hover {
+  background: #fff;
+  color: #0a3d62;
+}
+
+/* About Content Section */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(10, 61, 98, 0.9);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.about-content div {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-content h2 {
+  color: #f6b93b;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #fff;
+}

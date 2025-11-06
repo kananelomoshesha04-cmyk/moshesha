@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IWB PTY LTD - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">IWB PTY LTD</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Contact Us</h1>
+  
+  </section>
+
+  <!-- Contact Section -->
+  <section class="content contact-content">
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="company-info">
+      <h2>Company Info</h2>
+      <p><strong>Address:</strong> Ha 'Masana</p>
+      <p><strong>Phone:</strong> +266 59428104</p>
+      <p><strong>Email:</strong> kananelomoshesha03@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>For better explanations | <a href="contact.html">Contact Us</a></p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
